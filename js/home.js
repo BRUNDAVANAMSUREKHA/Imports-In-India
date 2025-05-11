@@ -1,12 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the video element
-    const video = document.getElementById("video-background");
-  
-    // Set the video to restart from 3 seconds after it ends
-    video.addEventListener("ended", function () {
-      video.currentTime = 3; // Start from 3 seconds
-      video.play(); // Play again from 3 seconds
-    });
   
     // Select all cards
     const cards = document.querySelectorAll(".card");
