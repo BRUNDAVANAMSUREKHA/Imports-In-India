@@ -11,10 +11,6 @@
   <link rel="stylesheet" href="../public/css/home.css"> <!-- External CSS File -->
 </head>
 <body>
-  <!-- Full Screen Video Background -->
-  <video id="video-background" class="video-background" autoplay muted>
-    <source src="../public/images/home/home.mp4" type="video/mp4">
-  </video>
 
   <div class="hero-section">
     <div class="info-container">
