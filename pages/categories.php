@@ -28,17 +28,7 @@
                 "Energy Products (Oil, Gas, Coal, etc.)", "Fertilizers", "Fish and Seafood", "Footwear", 
                 "Furniture and Home Goods", "Gems & Jewelry", "Glass and Ceramics", "Iron & Steel", 
                 "Leather & Leather Products", "Machinery (Industrial, Electrical, etc.)", 
-                "Medical & Pharmaceutical Products", "Mineral Fuels (Crude Oil, Natural Gas, etc.)", 
-                "Natural Resources (Wood, Timber, etc.)", "Oils & Fats (Vegetable, Animal, etc.)", 
-                "Organic Chemicals", "Paper & Paper Products", "Pharmaceuticals & Drugs", "Plastics & Plastic Articles", 
-                "Precious Metals (Gold, Silver, etc.)", "Precious Stones & Gems", "Rubber and Rubber Articles", 
-                "Seafood and Fish Products", "Ships, Boats & Floating Structures", "Silicon, Silicon Wafers & Solar Panels", 
-                "Steel Products", "Textiles (Yarn, Fabrics, Apparel)", "Tobacco and Tobacco Products", 
-                "Vehicles (Cars, Trucks, etc.)", "Vegetables (Fresh, Frozen, Processed)", "Wood Products (Planks, Lumber, etc.)", 
-                "Wines & Spirits", "Yarn and Fabrics", "Industrial Equipment and Parts", "Tools, Instruments, and Cutlery", 
-                "Packaging Materials (Glass, Metal, etc.)", "Toys and Games", "Electrical & Electronics (Consumer Goods)", 
-                "Minerals & Ores (Iron Ore, Coal, etc.)", "Building Materials (Cement, Tiles, etc.)", 
-                "Sports Equipment and Goods", "Luxury Goods (Watches, Jewelry, etc.)"
+                "Medical & Pharmaceutical Products"
             ];
 
             $imagePaths = [
@@ -48,17 +38,7 @@
                 "../public/images/categories/img10.png", "../public/images/categories/img11.png", "../public/images/categories/img12.png",
                 "../public/images/categories/img13.png", "../public/images/categories/img14.png", "../public/images/categories/img15.png",
                 "../public/images/categories/img16.png", "../public/images/categories/img17.png", "../public/images/categories/img18.png",
-                "../public/images/categories/img19.png", "../public/images/categories/img20.png", "../public/images/categories/img21.png",
-                "../public/images/categories/img22.png", "../public/images/categories/img23.png", "../public/images/categories/img24.png",
-                "../public/images/categories/img25.png", "../public/images/categories/img26.png", "../public/images/categories/img27.png",
-                "../public/images/categories/img28.png", "../public/images/categories/img29.png", "../public/images/categories/img30.png",
-                "../public/images/categories/img31.png", "../public/images/categories/img32.png", "../public/images/categories/img33.png",
-                "../public/images/categories/img34.png", "../public/images/categories/img35.png", "../public/images/categories/img36.png",
-                "../public/images/categories/img37.png", "../public/images/categories/img38.png", "../public/images/categories/img39.png",
-                "../public/images/categories/img40.png", "../public/images/categories/img41.png", "../public/images/categories/img42.png",
-                "../public/images/categories/img43.png", "../public/images/categories/img44.png", "../public/images/categories/img45.png",
-                "../public/images/categories/img46.png", "../public/images/categories/img47.png", "../public/images/categories/img48.png",
-                "../public/images/categories/img49.png", "../public/images/categories/img50.png"
+                "../public/images/categories/img19.png", "../public/images/categories/img20.png"
             ];
 
             foreach ($categories as $index => $category) {
