@@ -8,6 +8,12 @@
     <title>Categories of Imports in India</title>
     <link rel="stylesheet" href="/import/public/css/categories.css"> <!-- External CSS File -->
     <link rel="stylesheet" href="../public/css/categories_detail.css"> <!-- External CSS File for Category Details -->
+    <link rel="icon" type="image/png" href="/import/public/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/import/public/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/import/public/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/import/public/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/import/public/images/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
 </head>
 <body>
     <div class="overlay"></div>
