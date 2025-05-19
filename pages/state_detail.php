@@ -53,10 +53,12 @@ if($categories_result && $categories_result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($state_name); ?> - Import Details</title>
     <link rel="stylesheet" href="../public/css/states.css">
-    <!-- Additional styles remain the same -->
-    <style>
-        /* Your existing CSS styles */
-    </style>
+    <link rel="icon" type="image/png" href="/import/public/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/import/public/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/import/public/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/import/public/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/import/public/images/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
 </head>
 <body>
     <div class="navbar">
