@@ -113,13 +113,17 @@ body {
 }
 
 .card {
-    width: 350px; /* Adjusted width for a more compact look */
-    height: 400px; /* Height of the cards */
+     width: 350px;
+    height: 400px;
     position: relative;
     perspective: 1000px;
     cursor: pointer;
     border-radius: 15px;
     overflow: hidden;
+    transform: scale(0.95); /* Less scaling down (0.95 instead of 0.8) */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform-origin: center center;
+    margin: 0; /* Remove margin */
 }
 
 /* Alternating Colors for Shadow & Semi-circle */
@@ -413,3 +417,98 @@ h2 {
         margin-top: 70px;
     }
 }
+
+/* Extra small devices (phones <576px) */
+@media (max-width: 575.98px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .category-details {
+        margin: 60px auto 1rem;
+        padding: 0.8rem;
+    }
+
+    h2, .category-details h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Medium devices (tablets ≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+        width: 280px;
+        height: 360px;
+    }
+
+    .category-details {
+        padding: 1.2rem;
+    }
+
+    h2, .category-details h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Large devices (desktops ≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+        width: 320px;
+        height: 380px;
+    }
+}
+
+/* Extra large devices (large desktops ≥1200px) */
+@media (min-width: 1200px) {
+    .card {
+        width: 350px;
+        height: 400px;
+    }
+
+    .category-details {
+        padding: 2rem;
+    }
+
+    h2, .category-details h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Hover effects only on devices with hover capability */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-15px) scale(1.08);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+
+  .card:hover .card-overlay {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .card-overlay {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    bottom: 0;
+    pointer-events: auto;
+  }
+}
+@media (hover: none) {
+  .semi-circle {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
