@@ -113,9 +113,9 @@ body {
   justify-content: center;
   gap: 50px;
   padding: 20px;
+  perspective: 1000px; /* Enables 3D effect */
 }
 
-/* Individual Cards */
 .card {
   position: relative;
   width: 400px;
@@ -123,23 +123,25 @@ body {
   overflow: hidden;
   border-radius: 30px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
   border: 3px solid transparent;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  text-rendering: optimizeLegibility;
 }
 
-/* Card Image */
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Semicircle Overlay for Hover Effect */
 .card-overlay {
   position: absolute;
-  bottom: -100%;
+  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 100%);
   width: 100%;
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
@@ -151,88 +153,71 @@ body {
   justify-content: center;
   text-align: center;
   opacity: 0;
-  transition: bottom 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  pointer-events: none; /* prevents overlay blocking clicks */
 }
 
-/* Card Hover Effects */
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* Fix for Card Hover Colors */
 .card:first-of-type {
-  border: 3px solid #ff9933; /* Saffron */
+  border-color: #ff9933; /* Saffron */
 }
-.card:first-of-type:hover .card-overlay {
-  background: rgba(255, 102, 0, 0.6); /* Saffron Shaded */
-  bottom: 0;
-  opacity: 1;
+
+.card:first-of-type .card-overlay {
+  background: rgba(255, 102, 0, 0.6); /* Saffron */
 }
 
 .card:nth-of-type(2) {
-  border: 3px solid #000080; /* Navy Blue */
+  border-color: #000080; /* Navy Blue */
 }
-.card:nth-of-type(2):hover .card-overlay {
-  background: rgba(0, 0, 128, 0.6); /* Navy Blue Shaded */
-  bottom: 0;
-  opacity: 1;
+
+.card:nth-of-type(2) .card-overlay {
+  background: rgba(0, 0, 128, 0.6); /* Navy Blue */
 }
 
 .card:nth-of-type(3) {
-  border: 3px solid #138808; /* Green */
-}
-.card:nth-of-type(3):hover .card-overlay {
-  background: rgba(19, 136, 8, 0.6); /* Green Shaded */
-  bottom: 0;
-  opacity: 1;
+  border-color: #138808; /* Green */
 }
 
-/* For specific text that needs extra visibility */
-.visible-text {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 3px 8px;
-  border-radius: 4px;
-  color: #000;
+.card:nth-of-type(3) .card-overlay {
+  background: rgba(19, 136, 8, 0.6); /* Green */
 }
 
-.dark-text {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 3px 8px;
-  border-radius: 4px;
-  color: #fff;
+/* Hover effects only on devices with hover capability */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-15px) scale(1.08);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+
+  .card:hover .card-overlay {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
-/* Mobile Responsive */
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .card-overlay {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    bottom: 0;
+    pointer-events: auto;
+  }
+}
+
+/* Responsive card size */
 @media (max-width: 768px) {
-  .hero-section h1 {
-      font-size: 2rem;
-  }
-  
-  .info-container {
-      padding: 15px;
-  }
-  
   .card {
-      width: 90%;
-      max-width: 300px;
-  }
-}
-
-/* Active Class for Scroll Animation */
-.card.active {
-  animation: revealFromBottom 0.8s ease-out forwards;
-}
-
-/* Keyframes for Bottom-to-Top Reveal */
-@keyframes revealFromBottom {
-  0% {
-      transform: translateY(50px);
-      opacity: 0;
-  }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
+    width: 90%;
+    max-width: 300px;
   }
 }
