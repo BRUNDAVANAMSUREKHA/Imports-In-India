@@ -1,11 +1,10 @@
-# 🚀 HackOrbit2025 – Code by Surekha
+# Imports-In-India
 
-A PHP-based web app visualizing India’s import data across states and categories. Designed to help users analyze trade patterns through interactive pages and future-ready visualizations.
+**Imports in India** is a comprehensive PHP-based web application designed to showcase and explore the landscape of goods imported into the country across various states and product categories. The platform aims to provide meaningful insights by organizing data in a visually structured and interactive way.
 
----
-## ⏳ Built in 36 Hours During HackOrbit Hackathon
+Whether you're a student researching trade, a developer experimenting with PHP-MySQL integration, or a policymaker analyzing state-wise import patterns — this project offers a foundation to understand how imports contribute to the Indian economy.
 
-All code, design, and testing were done from **July 8, 2025 to July 9, 2025**.
+The application features dynamic content rendering using PHP, modular and responsive layouts with CSS, and JavaScript-powered interactivity. It's built with scalability in mind and can be extended into a data-driven dashboard or integrated with APIs and visualization libraries like Chart.js or D3.js in the future.
 
 ---
 
@@ -43,12 +42,6 @@ India is a massive importer of essential goods, but there’s no simple platform
 
 ---
 
-## 🤖 AI Assistance Disclosure
-
-Some functions and layout templates were generated using **ChatGPT** based on the original idea and use case. These outputs were reviewed, modified, and integrated manually by the developer. **No third-party code was copied** from existing repositories.
-
----
-
 ## 📦 Features
 
 - ✅ Dynamic home, states, categories, and import details pages  
@@ -58,10 +51,18 @@ Some functions and layout templates were generated using **ChatGPT** based on th
 
 ---
 
+## 🎥 Demo Video
+
+Click below to watch the demo of the project:
+
+[![Watch the Demo](https://img.youtube.com/vi/KN635aCdZdI/0.jpg)](https://youtu.be/KN635aCdZdI)
+
+---
+
 ## 📁 File Structure
 
 ```
-HackOrbit2025-CodebySurekha/
+imports-in-india/
 ├── config/
 │   └── config.php                # Global DB & app config
 ├── includes/
@@ -90,22 +91,6 @@ HackOrbit2025-CodebySurekha/
 
 ---
 
-## 🎯 Challenges We Faced
-
-- Initial database schema planning under tight time.
-- Responsive layout bugs in mobile view.
-- Making modular includes work without a framework (pure PHP).
-
----
-
-## 🏁 Accomplishments We're Proud Of
-
-- Completed core frontend and backend logic in under 48 hours.
-- Designed a fully functional multi-page PHP application.
-- Learned to optimize GitHub workflows and documentation under pressure.
-
----
-
 ## 📚 What's Next
 
 - Implement dynamic data using MySQL or live trade API
@@ -115,25 +100,17 @@ HackOrbit2025-CodebySurekha/
 
 ---
 
-## 🙌 Team
-
-| Name                | Role          | GitHub                                               |
-|---------------------|---------------|------------------------------------------------------|
-| Brundavanam Surekha | Full Stack Dev| [@BRUNDAVANAMSUREKHA](https://github.com/BRUNDAVANAMSUREKHA) |
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/BRUNDAVANAMSUREKHA/HackOrbit2025-CodebySurekha.git
+git clone https://github.com/yourusername/imports-in-india.git
 ```
 
 ### 2. Move to Server Root
 
-Place the `HackOrbit2025-CodebySurekha/` folder inside your server root directory:
+Place the `imports-in-india/` folder inside your server root directory:
 
 - For **XAMPP**: `htdocs/`
 - For **WAMP**: `www/`
@@ -163,7 +140,7 @@ This was an individual hackathon submission. However, the modular architecture i
 ## 📬 Contact
 
 Maintained by [@BRUNDAVANAMSUREKHA](https://github.com/BRUNDAVANAMSUREKHA)  
-For issues, please use the [GitHub Issues](https://github.com/BRUNDAVANAMSUREKHA/HackOrbit2025-CodebySurekha/issues) section.
+For issues, please use the [GitHub Issues](https://github.com/BRUNDAVANAMSUREKHA/Imports-In-India/issues) section.
 
 ---
 
@@ -173,6 +150,3 @@ For issues, please use the [GitHub Issues](https://github.com/BRUNDAVANAMSUREKHA
 > Usage, reproduction, or distribution without permission is strictly prohibited.
 
 ---
-
-> 🏁 **Final Note to Judges:**  
-> Every line of this project was designed, structured, and implemented in under 48 hours as part of HackOrbit 2025. From initial idea to execution, it reflects both technical skill and time-bound creativity.
